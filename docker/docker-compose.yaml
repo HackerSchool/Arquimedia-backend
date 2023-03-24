@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: arquimedia-backend
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ..
+    volumes:
+      - ../arquimedia/:/app/arquimedia
+    ports:
+      - 8081:80
