@@ -19,4 +19,4 @@ jobs:
         pip install -r requirements.txt
     - name: Analysing the code with flake8
       run: |
-        flake8 $(git ls-files '*.py') --rcfile=./configs/.flake8
+        flake8 $(git ls-files '*.py') --config=./configs/.flake8
