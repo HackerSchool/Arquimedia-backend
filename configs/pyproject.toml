@@ -1,8 +1,30 @@
 [tool.black]
 line-length = 120
-exclude = .git,__pycache__,docs/source/conf.py,old,build,dist,venv,env
+exclude = '''
+    /(
+        \.git
+      | \.mypy_cache
+      | \.pytest_cache
+      | \.tox
+      | build
+      | dist
+      | venv
+      | .github
+    )/
+'''
 
 [flake8]
 max-line-length = 120
-ignore = E203, E266, E501, W503, F403, F401
-exclude = .git,__pycache__,docs/source/conf.py,old,build,dist,venv,env
+ignore = ["E203", "E266", "E501", "W503", "F403", "F401"]
+exclude = '''
+    /(
+        \.git
+      | \.mypy_cache
+      | \.pytest_cache
+      | \.tox
+      | build
+      | dist
+      | venv
+      | .github
+    )/
+'''
