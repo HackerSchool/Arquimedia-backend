@@ -23,7 +23,7 @@ jobs:
           black_args: --config=./configs/pyproject.toml
 
           flake8: true
-          flake8_args: --config=./configs/pyproject.toml
+          flake8_args: --config=./configs/.flake8
 
           commit_message: "style: format code with black and flake8"
 
