@@ -10,6 +10,7 @@ exclude = '''
       | dist
       | venv
       | .github
+      | configs
     )/
 '''
 
@@ -26,5 +27,6 @@ exclude = '''
       | dist
       | venv
       | .github
+      | configs
     )/
 '''
