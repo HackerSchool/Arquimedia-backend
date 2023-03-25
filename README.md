@@ -61,6 +61,12 @@ make logs
 
 This will show the logs of the docker container.
 
+Might also be useful to enter the container's shell and run commands manually. To do so, run the following command:
+
+```bash
+make shell
+```
+
 ## Testing
 
 To test the project, you need to run the following command:
@@ -78,6 +84,24 @@ To access the documentation, you need to run the project and access the followin
 ```bash
 http://localhost:8001/docs
 ```
+
+## Pre-commit
+
+This project uses [pre-commit](https://pre-commit.com/) to run some checks before committing.
+
+To install hooks, run the following command:
+
+```bash
+pre-commit install
+```
+
+This checks will run automatically before every commit and will check for:
+
+- [x] Black
+- [x] Flake8
+- [x] Conventional Commits
+
+This is a useful tool to keep the code clean and consistent. Changes will still be checked by the CI, but it's better to fix them before pushing.
 
 ## Contributing
 
