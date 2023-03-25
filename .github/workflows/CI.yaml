@@ -19,12 +19,13 @@ jobs:
       - name: Run linters
         uses: wearerequired/lint-action@v2
         with:
+          auto_fix: true
           black: true
           black_args: --config=./configs/pyproject.toml
-
+          black_auto_fix: true
           flake8: true
           flake8_args: --config=./configs/.flake8
-
+          flake8_auto_fix: false
           commit_message: "style: format code with black and flake8"
 
   test:
